@@ -1,6 +1,9 @@
 # Use a Python image with uv pre-installed
 FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim
 
+# Install Git
+RUN apt-get update && apt-get install -y git
+
 # Install the project into `/app`
 WORKDIR /app
 
