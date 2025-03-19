@@ -16,7 +16,7 @@ if __name__ == "__main__":
         name="markov",
         work_pool_name="default",
         image=DockerImage(
-            name="docker.io/glynfinck/markov",
+            name="docker.io/glynfinck/prefect-quantitative-trading-markov",
             tag="latest"
         ),
         build=False,
