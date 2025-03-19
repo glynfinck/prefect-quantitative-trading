@@ -29,5 +29,5 @@ jobs:
         with:
           context: projects/markov
           push: true
-          file: ../../deploy/Dockerfile
+          file: deploy/Dockerfile
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}-markov:latest
