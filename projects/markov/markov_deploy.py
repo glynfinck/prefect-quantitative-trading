@@ -6,10 +6,7 @@ if __name__ == "__main__":
     markov.deploy(
         name="markov",
         work_pool_name="default",
-        image=DockerImage(
-            name="markov",
-            tag="latest",
-            dockerfile="../../deploy/Dockerfile"
-        ),
-        push=True,
+        image="docker.io/glynfinck/prefect-quantitative-trading/markov:latest",
+        build=False,
+        push=False
     )
